@@ -41,6 +41,8 @@ class BankAccount:
 account1 = BankAccount('Budhcad',580)
 account1.deposit(250)
 account1.deposit(350)
+account1.deposit(-250)
 account1.withdraw(57)
+account1.withdraw(0)
 account1.details()
 account1.statement()
