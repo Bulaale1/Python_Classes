@@ -38,7 +38,7 @@ class BankAccount:
             print(f' {status:12}: {entry}')
 
 
-account1 = BankAccount('Budhcad',580)
+account1 = BankAccount('Bulaale116',580)
 account1.deposit(250)
 account1.deposit(350)
 account1.deposit(-250)
