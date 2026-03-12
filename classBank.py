@@ -144,7 +144,7 @@ class Vehicle:
     def get_age(self):
         return date.today().year  - self.year
     def describe(self):
-        return f"This vehicle is {self.make}, {self.model}, {self.year}"
+        return f"This  is {self.make}, {self.model}, {self.year}"
     def __str__(self):
         return f"This is Vehicle class with make:{self.make},model:{self.model},and manufactured on :{self.year}"
 class Car(Vehicle):
@@ -170,6 +170,8 @@ car = Car('Tesla', 'Model 3', 2023, 4)
 motorcycle = Motorcycle('Yamaha', 'MT-07', 2011, False)
 motorcycle1 = Motorcycle('Toyota', 'MT-09', 2014, True)
 motorcycle2 = Motorcycle('Yamaha', 'MT-05', 2009)
+my_bike = Motorcycle("Harley-Davidson", "Enthusiast",2015, has_sidecar=True)
+
 
 print(car.describe())
 print(f"Resale Value: $CAD {car.get_resale_value()}")
@@ -191,3 +193,4 @@ print("-" * 20)
 print(motorcycle2.describe())
 print(f"Resale Value: $CAD {motorcycle2.get_resale_value()}")
 print(f"Age: {motorcycle2.get_age()} years") 
+print(my_bike.describe())
